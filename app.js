@@ -59,7 +59,7 @@ function Message(message){
 
     }
     else{
-        io.emit('chat_message', '<strong style="color: red;">' +  boticon+ "Robot" + '</strong>: ' + ".................");
+        io.emit('chat_message', '<strong style="color: red;">' +  boticon+ "Robot" + '</strong>: ' + "Please Feed me with the data  and follow me at   :  <a href='https://github.com/DaimDN'> Follow Now </a> "  );
 
     }
   
