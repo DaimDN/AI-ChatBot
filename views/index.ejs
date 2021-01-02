@@ -58,6 +58,8 @@
                 $('#messages').append($('<li>').html(username));
             });
 
+            
+
             socket.on('is_online', function(bot) {
                 $('#bot').append($('<li>').html(bot));
             });
@@ -66,7 +68,12 @@
             // ask username
             var username = prompt('Please tell me your name');
             socket.emit('username', username);
-            socket.emit('bot', bot);
+
+            setTimeout(function() {
+              socket.emit('bot', bot);
+              }, 700);
+
+           
 
     </script>
   </body>

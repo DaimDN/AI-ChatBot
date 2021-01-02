@@ -29,7 +29,13 @@ io.sockets.on('connection', function(socket) {
 
     socket.on('chat_message', function(message) {
         io.emit('chat_message', '<strong>' + usericon + socket.username + '</strong>: ' + message);
-       Message(message);
+       
+        setTimeout(function() {
+            Message(message);
+        }, 1000);
+
+
+       
         
     });
 
